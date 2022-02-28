@@ -26,8 +26,38 @@
 
 
 ---
-## Video 01
-hej
+## Part 01
+Callback
+
+<br><br>
+
+---
+## Part 02
+ Promise [ then and catch ]
+
+<br><br>
+
+---
+## Part 03
+
+
+<br><br>
+
+---
+## Part 04
+
+
+<br><br>
+
+---
+## Part 05
+
+
+<br><br>
+
+---
+## Part 06
+
 
 <br><br>
 
