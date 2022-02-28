@@ -33,7 +33,7 @@ Callback
 
 ---
 ## Part 02
- Promise [ then and catch ]
+Promise [ then and catch ]
 
 <br><br>
 
@@ -45,7 +45,7 @@ Async and Await for Promise
 
 ---
 ## Part 04
-
+Create min project with Fetch and Async (API)
 
 <br><br>
 
