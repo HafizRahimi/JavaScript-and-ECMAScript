@@ -51,12 +51,51 @@ Create min project with Fetch and Async (API)
 
 ---
 ## Part 05
+Arrow Function
+
+[ECMA Script Video_07](https://toplearn.com/c/731r "Toplearn")
 
 
 <br><br>
 
 ---
 ## Part 06
+
+
+<br><br>
+
+---
+## Part 07
+
+
+<br><br>
+
+---
+## Part 08
+
+
+<br><br>
+
+---
+## Part 09
+
+
+<br><br>
+
+---
+## Part 10
+
+
+<br><br>
+
+---
+## Part 00
+
+
+<br><br>
+
+---
+## Part 00
 
 
 <br><br>

@@ -1,45 +1,27 @@
-//Fetch and Async
+//Arrow Functions
 
-const posts_url = "https://jsonplaceholder.typicode.com/posts/";
-const users_url = "https://jsonplaceholder.typicode.com/users/";
-const app = document.getElementById("app");
+// Function
+// function myFunction(){}
 
-// console.log(fetch(url));
+//Arrow Function
+// const myFunction = ()=> {}
 
-// fetch(url)
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-
-
-async function getAuthors(url, id) {
-    const response = await fetch(url + id);
-    const author = await response.json();
-    return author;
-}
+// const getSum = (a, b) => {
+//     return a + b;
+// };
+// console.log(getSum(3,5));
 
 
-async function getArticles(url) {
-    const response = await fetch(url);
-    const data = await response.json();
-    // console.log(data);
-    // let postFilter = data.filter(post => post.userId < 4 && post.userId > 2)
-    let postFilter = data.filter(post => post.userId < 2)
 
-    console.log(postFilter);
-    
-    postFilter.forEach(async post =>{
-        // console.log(post);
-        post.user = await getAuthors(users_url, post.userId);
-        console.log(post.user);
-        app.innerHTML += `
-        <article>
-            <h2>${post.title}</h2>
-            <small>${post.user.name}</small>
-            <p>${post.body}</p>
-        </article>
-        <hr>
-        `
-    })
-}
+// const getSum = (a) => {
+//     return a + 60;
+// };
+// console.log(getSum(6));
 
-getArticles(posts_url);
+
+
+// const getSum = a =>  a + 60; 
+// console.log(getSum(6));
+
+const getSum = (a,b) =>  a + b; 
+console.log(getSum(6,14));
