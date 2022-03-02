@@ -1,35 +1,29 @@
-//Class Setter And Getter
-
-
+//Class Static Method
 
 class Person {
-    //سازنده
     constructor(firstName, lastName, age) {
-        this._firstName = firstName; // (_) is For private FirstName
-        this._lastName = lastName;
-        this._age = age;
+        this.firstName = firstName; 
+        this.lastName = lastName;
+        this.age = age;
     }
 
-    set firstName(newFirstName) {
-        console.log('Setting firstName');
-        this._firstName = newFirstName;
-    }
-
-    get firstName() {
-        console.log('Getting firstName');
-        return this.firstName;
-    }
-
-    //Class Method (is Prototype Method)
     sayMyName(){
         console.log(`My name is ${this.firstName}`);
+    }
+
+    static goodPerson (name){
+        console.log(`${name} is a Goood person`);
     }
 }
 
 const person1 = new Person('Ali', 'Rahimi', 33);
 
-person1.firstName = 'Hamid';
+person1.sayMyName();
+// Person.sayMyName(); // Error
 
-// person1.sayMyName();
+Person.goodPerson('Hamid');
+// person1.goodPerson('Hamid'); // Error
 
-console.log(person1);
+
+
+

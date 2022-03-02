@@ -19,7 +19,8 @@
 
 #### **Help :**
 
-* [help1](http://microsoft.com/ "help1")
+- [help1](http://microsoft.com/ "help1")
+
 - [help2](http://microsoft.com/ "help2")
 <br><br>
 
@@ -104,6 +105,14 @@ Class Setter And Getter
 ---
 
 ## Part 08
+
+Class Static Methods
+
+<br>
+
+[ECMA Script Video_12](https://toplearn.com/c/731r "Toplearn")
+
+[Class Static w3schools](https://www.w3schools.com/js/js_class_static.asp "w3schools")
 
 <br><br>
 
