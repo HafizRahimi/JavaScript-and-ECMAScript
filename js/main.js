@@ -1,27 +1,52 @@
-//Arrow Functions
+//Class
 
-// Function
-// function myFunction(){}
+'ES5 Class, when we had not Class';
 
-//Arrow Function
-// const myFunction = ()=> {}
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
 
-// const getSum = (a, b) => {
-//     return a + b;
+//     // method
+//     // this.sayMyName = function () {
+//     //     console.log(`My name is ${this.firstName}`);
+//     // };
+// }
+
+// // Prototype method
+// Person.prototype.sayMyName = function () {
+//     console.log(`My name is ${this.firstName}`);
 // };
-// console.log(getSum(3,5));
 
+// let person1 = new Person('Ali', 'Rahimi', 33);
 
+// // person1.firstName = 'Hamid';
 
-// const getSum = (a) => {
-//     return a + 60;
-// };
-// console.log(getSum(6));
+// console.log(person1);
 
+// person1.sayMyName();
 
+'------------------------------------';
+'ES6 Class, when Class came';
 
-// const getSum = a =>  a + 60; 
-// console.log(getSum(6));
+class Person {
+    //سازنده
+    constructor(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
 
-const getSum = (a,b) =>  a + b; 
-console.log(getSum(6,14));
+    //Class Method (is Prototype Method)
+    sayMyName(){
+        console.log(`My name is ${this.firstName}`);
+    }
+}
+
+const person1 = new Person('Ali', 'Rahimi', 33);
+
+// person1.firstName = 'Hamid';
+
+// person1.sayMyName();
+
+console.log(person1);
