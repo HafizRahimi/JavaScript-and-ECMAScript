@@ -1,40 +1,23 @@
-//Class
+//Class Setter And Getter
 
-'ES5 Class, when we had not Class';
 
-// function Person(firstName, lastName, age) {
-//     this.firstName = firstName;
-//     this.lastName = lastName;
-//     this.age = age;
-
-//     // method
-//     // this.sayMyName = function () {
-//     //     console.log(`My name is ${this.firstName}`);
-//     // };
-// }
-
-// // Prototype method
-// Person.prototype.sayMyName = function () {
-//     console.log(`My name is ${this.firstName}`);
-// };
-
-// let person1 = new Person('Ali', 'Rahimi', 33);
-
-// // person1.firstName = 'Hamid';
-
-// console.log(person1);
-
-// person1.sayMyName();
-
-'------------------------------------';
-'ES6 Class, when Class came';
 
 class Person {
     //سازنده
     constructor(firstName, lastName, age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
+        this._firstName = firstName; // (_) is For private FirstName
+        this._lastName = lastName;
+        this._age = age;
+    }
+
+    set firstName(newFirstName) {
+        console.log('Setting firstName');
+        this._firstName = newFirstName;
+    }
+
+    get firstName() {
+        console.log('Getting firstName');
+        return this.firstName;
     }
 
     //Class Method (is Prototype Method)
@@ -45,7 +28,7 @@ class Person {
 
 const person1 = new Person('Ali', 'Rahimi', 33);
 
-// person1.firstName = 'Hamid';
+person1.firstName = 'Hamid';
 
 // person1.sayMyName();
 
