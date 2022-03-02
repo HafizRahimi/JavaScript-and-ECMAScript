@@ -120,6 +120,18 @@ Class Static Methods
 
 ## Part 09
 
+Class Inheritance 
+
+1- extends 
+<br>
+2- super()
+
+<br>
+
+[ECMA Script Video_13](https://toplearn.com/c/731r "Toplearn")
+
+[Class Inheritance w3schools](https://www.w3schools.com/js/js_class_inheritance.asp "w3schools")
+
 <br><br>
 
 ---
