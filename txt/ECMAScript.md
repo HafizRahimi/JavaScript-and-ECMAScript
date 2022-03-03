@@ -120,9 +120,9 @@ Class Static Methods
 
 ## Part 09
 
-Class Inheritance 
+Class Inheritance
 
-1- extends 
+1- extends
 <br>
 2- super()
 
@@ -147,6 +147,10 @@ Object Basics
 ---
 
 ## Part 11
+
+Factory Functions for create a object.
+
+[Object Video_02](https://megajs.com/?p=2402 "Megajs")
 
 <br><br>
 

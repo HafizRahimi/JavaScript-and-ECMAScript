@@ -1,32 +1,47 @@
-// Object Basics
+// Factory Functions
+// For create a new object.
 
 
-var firstName = 'Hafiz'; 
-var lastName = 'Rahimi'; 
-var age = 45; 
-var isMarry = false; 
-
-
-var person = {
+var person1 = {
     firstName: 'Hafiz',
     lastName: 'Rahimi',
-    county:["Uddevalla", 'Smögen'],
-    age: 45,
-    isMarry: false,
-    address: function (){
-        console.log('Address');
+}
+
+ 
+// Factory Function
+function person(firstName, lastName, age) {
+    // return{
+    //     firstName: firstName,
+    //     lastName: lastName,
+    //     age: age,
+    //     logAge (){
+    //         console.log( firstName + ' is  ' + age);
+    //     }
+    // }
+
+    //ES6
+    return{
+        firstName, 
+        lastName,
+        age,
+        logAge (){
+            console.log( firstName + ' is  ' + age);
+        }
     }
 }
 
 
-console.log(person.address());
-
-console.log(person.county[1]);
-
-console.log(person.firstName);
-console.log(person['firstName']);
+var person2 = person('William', 'John',22);
+var person3 = person('Hamed', 'Navi',15);
+var person4 = person('Navid', 'Hamidi',18);
 
 
-person.age = 33;
-console.log(person.age);
+
+console.log(person1.firstName);
+console.log(person2.firstName);
+console.log(person3.firstName);
+console.log(person4.logAge());
+
+
+
 
