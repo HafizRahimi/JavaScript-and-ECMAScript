@@ -138,11 +138,135 @@ Class Inheritance
 
 ## Part 10
 
+Object Basics
+
+[Object Video_01](https://megajs.com/?p=2402 "Megajs")
+
 <br><br>
 
 ---
 
-## Part 00
+## Part 11
+
+<br><br>
+
+---
+
+## Part 12
+
+<br><br>
+
+---
+
+## Part 13
+
+<br><br>
+
+---
+
+## Part 14
+
+<br><br>
+
+---
+
+## Part 15
+
+<br><br>
+
+---
+
+## Part 16
+
+<br><br>
+
+---
+
+## Part 17
+
+<br><br>
+
+---
+
+## Part 18
+
+<br><br>
+
+---
+
+## Part 19
+
+<br><br>
+
+---
+
+## Part 20
+
+<br><br>
+
+---
+
+## Part 21
+
+<br><br>
+
+---
+
+## Part 22
+
+<br><br>
+
+---
+
+## Part 23
+
+<br><br>
+
+---
+
+## Part 24
+
+<br><br>
+
+---
+
+## Part 25
+
+<br><br>
+
+---
+
+## Part 26
+
+<br><br>
+
+---
+
+## Part 26
+
+<br><br>
+
+---
+
+## Part 27
+
+<br><br>
+
+---
+
+## Part 28
+
+<br><br>
+
+---
+
+## Part 29
+
+<br><br>
+
+---
+
+## Part 30
 
 <br><br>
 
