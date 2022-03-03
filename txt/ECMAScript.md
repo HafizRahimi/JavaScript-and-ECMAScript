@@ -168,6 +168,10 @@ Constructor Functions for create a object.
 
 ## Part 13
 
+Add or Delete Property
+
+[Object Video_04](https://megajs.com/?p=2402 "Megajs")
+
 <br><br>
 
 ---
