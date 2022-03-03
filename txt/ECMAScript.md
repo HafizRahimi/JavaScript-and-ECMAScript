@@ -178,6 +178,22 @@ Add or Delete Property
 
 ## Part 14
 
+`Primitives types:`
+1. number
+2. string
+3. boolean
+
+<br>
+
+`Reference types:`
+1. object 
+2. array
+3. function
+
+
+[Object Video_05](https://megajs.com/?p=2402 "Megajs")
+
+
 <br><br>
 
 ---

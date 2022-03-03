@@ -1,24 +1,33 @@
-// Add or Delete Property 
+//Primitives types and Reference types
+
+// ---------------------------------------------
+// Primitives types ==> number, string, boolean
+
+var x = 19;
+var y = x;
+
+// x = 19
+x = 10;
+// x = 10 But y = 19
 
 
-var person ={
-    firstName: 'William'
-}
+console.log(x);
+console.log(y);
 
 
-// Add Property to person
-person.lastName = 'John';
-person.address = function(){
-    console.log('Address');
-}
-
-console.log(person);
+// ---------------------------------------------
+// Reference types ==> object, array, function
 
 
-// Delete Property to person
-delete person.firstName;
+var a = {value:30};
+var b = a;
 
-console.log(person);
+
+a.value = 12;
+// a = {value:12} AND b = {value:12} 
+
+console.log(a);
+console.log(b);
 
 
 
