@@ -158,6 +158,10 @@ Factory Functions for create a object.
 
 ## Part 12
 
+Constructor Functions for create a object.
+
+[Object Video_03](https://megajs.com/?p=2402 "Megajs")
+
 <br><br>
 
 ---

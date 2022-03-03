@@ -1,46 +1,36 @@
-// Factory Functions
+// Constructor Function
 // For create a new object.
 
 
-var person1 = {
-    firstName: 'Hafiz',
-    lastName: 'Rahimi',
-}
-
- 
-// Factory Function
-function person(firstName, lastName, age) {
-    // return{
-    //     firstName: firstName,
-    //     lastName: lastName,
-    //     age: age,
-    //     logAge (){
-    //         console.log( firstName + ' is  ' + age);
-    //     }
-    // }
-
-    //ES6
+// Factory Function 
+// camel notation: oneTwoThree
+function personInfo(firstName, lastName) {
     return{
         firstName, 
         lastName,
-        age,
-        logAge (){
-            console.log( firstName + ' is  ' + age);
+        sayHello(){
+            console.log('Hello!');
         }
     }
 }
 
-
-var person2 = person('William', 'John',22);
-var person3 = person('Hamed', 'Navi',15);
-var person4 = person('Navid', 'Hamidi',18);
+var person1 = personInfo('William', 'John');
+console.log(person1);
 
 
+// Constructor Function
+// pascal notation: OneTwoThree
+function PersonInfo(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.sayHello = function (){
+        console.log('Hello!');
+    }
+}
 
-console.log(person1.firstName);
-console.log(person2.firstName);
-console.log(person3.firstName);
-console.log(person4.logAge());
+
+var person2 = new PersonInfo('Hafiz', 'Rahimi');
+console.log(person2);
 
 
 
