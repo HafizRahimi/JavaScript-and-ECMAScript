@@ -178,14 +178,14 @@ Add or Delete Property
 
 ## Part 14
 
-`Primitives types:`
+`Primtive data types:`
 1. number
 2. string
 3. boolean
 
 <br>
 
-`Reference types:`
+`Reference data types:`
 1. object 
 2. array
 3. function
@@ -199,6 +199,14 @@ Add or Delete Property
 ---
 
 ## Part 15
+
+Enumerating objects
+
+1. for in (loop)
+2. if in (if)
+
+
+[Object Video_06](https://megajs.com/?p=2402 "Megajs")
 
 <br><br>
 
