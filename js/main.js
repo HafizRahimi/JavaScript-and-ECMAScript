@@ -1,27 +1,30 @@
+// Cloning an object
+// Copy a objects properties to other object
 
-// 
-
-
-
-// object
+// person object
 var person = {
     firstName: 'William',
-    lastName: 'Johan'
-}
+    lastName: 'John',
+};
 
+//----------------------------------------
+// The old way (for in)
+var personInfo = {};
 
-// for in (loop)
 for (const key in person) {
-    console.log(key + ' ==> ' + person[key]);
+    personInfo[key] = person[key];
 }
+console.log(personInfo);
 
-//if in 
-if("firstName" in person) console.log('yes, this is');
+//----------------------------------------
+// The new way (Object.assign())
+var newPerson = {};
 
+Object.assign(newPerson, person);
+console.log(newPerson);
 
+var newPerson1 = Object.assign({}, person);
+console.log(newPerson1);
 
-
-
-
-
-
+var newPerson2 = Object.assign({ age: 43 }, person);
+console.log(newPerson2);

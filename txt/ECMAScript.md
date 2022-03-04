@@ -214,6 +214,13 @@ Enumerating objects
 
 ## Part 16
 
+Cloning an object (`Copy a Objects properties to other Object`):  
+
+1. for in loop
+2. Object.assign(target, source)
+
+[Object Video_07](https://megajs.com/?p=2402 "Megajs")
+
 <br><br>
 
 ---
