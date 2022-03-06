@@ -226,6 +226,9 @@ Cloning an object (`Copy a Objects properties to other Object`):
 ---
 
 ## Part 17
+Garbage Collector
+
+[Object Video_08](https://megajs.com/?p=2402 "Megajs")
 
 <br><br>
 
