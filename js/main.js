@@ -1,61 +1,30 @@
-// Date Object
-
-const now = new Date();
-console.log(typeof now);
-console.log(now);
-
-const myDate1 = new Date(2018, 11, 24, 12);
-const myDate2 = new Date('december 24 2018 12:32:02');
-
-console.log(myDate1);
-console.log(myDate2);
+// Template Literals (Back Tick ``)
 
 
-//-----------------------------
-// get method
+var message = 'this is' + 
+'\n my \'message\''
 
-var day = now.getDay();
-var month = now.getMonth();
-var year = now.getFullYear();
-
-console.log(day);
-console.log(month);
-console.log(year);
+var name = 'Navid'
+var message3 = 'Helle '+ name + '! \n' + 
+'Welcome to my website \n' + 
+'thank you' 
 
 
-//-----------------------------
-// set method
+// Back Tick ``
+var message2 = `this is
+my 'message'`
 
-// var setYear = now.setTime(2025)
-
-// console.log(setYear);
-
-
-//-----------------------------
-// toISOString() method
-
-var date1 = now.toISOString();
-
-console.log(date1);
-
-
-
-//-----------------------------
-// toString() method
-
-var date2 = now.toString();
-
-console.log(date2);
-
-
-//-----------------------------
-// toString() method
-
-var date2 = now.toString();
-
-console.log(date2);
+var message4 =`Hello ${name}!
+Welcome to my website
+Thank you`
 
 
 
 
 
+
+console.log(message);
+console.log(message2);
+
+console.log(message3);
+console.log(message4);
