@@ -1,30 +1,21 @@
-// Template Literals (Back Tick ``)
+// Project 01: Create a object and log 
+
+// Create a new object
+var address ={
+    city: 'uddevalla',
+    street: 24,
+    zipcode: 'ddd'
+}
+
+// For in (loop Object)
+function showAddress(arg){
+    for (const key in arg) {
+        // back tick
+        console.log(`${key}:  ${arg[key]}`);
+    }
+}
 
 
-var message = 'this is' + 
-'\n my \'message\''
-
-var name = 'Navid'
-var message3 = 'Helle '+ name + '! \n' + 
-'Welcome to my website \n' + 
-'thank you' 
+showAddress(address)
 
 
-// Back Tick ``
-var message2 = `this is
-my 'message'`
-
-var message4 =`Hello ${name}!
-Welcome to my website
-Thank you`
-
-
-
-
-
-
-console.log(message);
-console.log(message2);
-
-console.log(message3);
-console.log(message4);

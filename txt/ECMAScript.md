@@ -267,6 +267,9 @@ Template Literals (Back Tick )
 ---
 
 ## Part 21
+`Projects`:
+
+1. Project 01: [Video_12](https://megajs.com/?p=2402 "Megajs")
 
 <br><br>
 
