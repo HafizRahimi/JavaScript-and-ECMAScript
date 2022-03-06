@@ -236,6 +236,12 @@ Garbage Collector
 
 ## Part 18
 
+Math Math method in Objects
+
+[Math method: Video_61 JavaScript](https://youtu.be/Yk6x6-zRjcU "Youtube")
+
+[Object Video_09](https://megajs.com/?p=2402 "Megajs")
+
 <br><br>
 
 ---
