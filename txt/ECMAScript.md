@@ -236,9 +236,9 @@ Garbage Collector
 
 ## Part 18
 
-Math Math method in Objects
+Math Object
 
-[Math method: Video_61 JavaScript](https://youtu.be/Yk6x6-zRjcU "Youtube")
+[Maths methods: Video_61 JavaScript](https://youtu.be/Yk6x6-zRjcU "Youtube")
 
 [Object Video_09](https://megajs.com/?p=2402 "Megajs")
 
@@ -247,6 +247,10 @@ Math Math method in Objects
 ---
 
 ## Part 19
+
+Date Object and Dates Methods
+
+[Object Video_10](https://megajs.com/?p=2402 "Megajs")
 
 <br><br>
 

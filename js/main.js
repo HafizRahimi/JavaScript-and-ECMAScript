@@ -1,124 +1,61 @@
-// Math Method Objects
+// Date Object
 
-//Method Math
+const now = new Date();
+console.log(typeof now);
+console.log(now);
 
+const myDate1 = new Date(2018, 11, 24, 12);
+const myDate2 = new Date('december 24 2018 12:32:02');
 
-const m = Math;
-console.log(m);
-
-//-----------------------------------------------
-// Math.round()
-
-const rMethod = Math.round(2.5043); // 3
-// const rMethod = Math.round(2.3043); //2
-
-// const rMethod = Math.round(-2.5043) // -3
-// const rMethod = Math.round(-2.3043) // -2
-
-console.log('round Method: '+rMethod);
-console.log('--------------------------------------');
+console.log(myDate1);
+console.log(myDate2);
 
 
-//-----------------------------------------------
-// Math.ceil()
-// Math.floor()
+//-----------------------------
+// get method
 
-const cMethod = Math.ceil(2.4043) //3
-// const cMethod = Math.ceil(2.5043) //3
-// const cMethod = Math.ceil(-2.5043) //-2
+var day = now.getDay();
+var month = now.getMonth();
+var year = now.getFullYear();
 
-
-const fMethod = Math.floor(2.4043) //2
-// const fMethod = Math.floor(2.5043) //2
-// const fMethod = Math.floor(-2.5043) //-3
+console.log(day);
+console.log(month);
+console.log(year);
 
 
-console.log('ceil Method: '+cMethod);
-console.log('floor Method: '+fMethod);
-console.log('--------------------------------------');
+//-----------------------------
+// set method
+
+// var setYear = now.setTime(2025)
+
+// console.log(setYear);
 
 
-//-----------------------------------------------
-//Math.trunc()
+//-----------------------------
+// toISOString() method
 
-// const tMethod = Math.trunc(2.8) // 2
-const tMethod = Math.trunc(-2.8) // -2
+var date1 = now.toISOString();
 
-console.log('trunc Method: '+tMethod);
-console.log('--------------------------------------');
+console.log(date1);
 
 
 
-//-----------------------------------------------
-// Math.sign()
+//-----------------------------
+// toString() method
 
-// const sMethod = Math.sign(10); // 1
-const sMethod = Math.sign(0); // 0
-// const sMethod = Math.sign(-30); // -1
+var date2 = now.toString();
 
-console.log('sign Method: '+sMethod);
-console.log('--------------------------------------');
+console.log(date2);
 
 
-//-----------------------------------------------
-// Math.pow()
+//-----------------------------
+// toString() method
 
-const pMethod = Math.pow(2,3) // 2 * 2 * 2 = 8
+var date2 = now.toString();
 
-console.log('pow Method: '+pMethod);
-console.log('--------------------------------------');
-
-
-//-----------------------------------------------
-// Math.sqrt()
-
-const sqMethod = Math.sqrt(9) // 
-
-console.log('sqrt Method: '+sqMethod);
-console.log('--------------------------------------');
+console.log(date2);
 
 
-//-----------------------------------------------
-// Math.abs()
-
-// const aMethod = Math.abs(9) // 9
-const aMethod = Math.abs(-7) // 7
-
-console.log('abs Method: '+aMethod);
-console.log('--------------------------------------');
 
 
-//-----------------------------------------------
-// Math.max()
-
-const maxMethod = Math.max(12, 14, 30, 5)
-
-console.log('max Method: '+maxMethod);
-console.log('--------------------------------------');
-
-
-//-----------------------------------------------
-// Math.min()
-
-const minMethod = Math.min(12, 14, 30, 5)
-
-console.log('max Method: '+minMethod);
-console.log('--------------------------------------');
-
-
-//-----------------------------------------------
-// Math.min()
-
-// const raMethod =Math.random() // tal : 0 to 1
-// const raMethod =Math.random() * 21 // tal : 0 to 21
-
-// const raMethod =Math.trunc( Math.random() * 21 )// tal : 0 to 21
-
-const raMethod =Math.round( Math.random() * 21 )// tal : 0 to 21
-
-console.log('random Method: '+raMethod);
-console.log('--------------------------------------');
-
-
-//-----------------------------------------------
 
