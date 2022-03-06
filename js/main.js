@@ -1,21 +1,30 @@
-// Project 01: Create a object and log 
+// Project 02: factory function and constructor function
 
-// Create a new object
-var address ={
-    city: 'uddevalla',
-    street: 24,
-    zipcode: 'ddd'
+
+// factory function
+function createAddress(city, street, zipCode) {
+    return {
+        city,
+        street,
+        zipCode,
+    };
 }
 
-// For in (loop Object)
-function showAddress(arg){
-    for (const key in arg) {
-        // back tick
-        console.log(`${key}:  ${arg[key]}`);
-    }
+var myAddress = createAddress('uddevalla', 24, '878374');
+
+console.log(myAddress);
+
+
+
+//------------------------------------------------------
+// constructor function
+function CreateAddress(city, street, zipCode){
+    this.city = city;
+    this.street = street;
+    this.zipCode = zipCode;
 }
 
-
-showAddress(address)
+const aliAddress = new CreateAddress('Gothenborg', '12', '13123');
+console.log(aliAddress);
 
 
