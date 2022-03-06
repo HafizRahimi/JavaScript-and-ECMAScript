@@ -1,19 +1,26 @@
-// Project 04: Create a Object Post
+// Project 05: Create a constructor function for Post Object
 
+// constructor function 
 
-var post = {
-    title: 'a',
-    body: 'd',
-    author: 'Hafiz',
-    comments: [
-        {author: 'Ali', text:'d'},
-        {author:'Hamid', text: 'd'},
-    ],
-    views: 354,
-    isLive: true,
+function CreatePost(title, body, author, comments, views, isLive) {
+    this.title = title;
+    this.body = body;
+    this.author = author;
+    this.comments = comments;
+    this.views = views;
+    this.isLive = isLive;
 }
 
-console.log(post);
+var comments = [
+    {author:'y' , content:'kk'},
+    {author:'x' , content:'lll'}
+];
+
+
+var post1 = new CreatePost('b', 'g', 'n', comments, 245, false);
+
+console.log(post1);
+console.log(post1.comments[1].author);
 
 
 
