@@ -325,6 +325,12 @@ Rest Operators `(...args)`
 
 ## Part 25
 
+Default Parameters (ES6)
+
+<br>
+
+[Functions Video_04](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---

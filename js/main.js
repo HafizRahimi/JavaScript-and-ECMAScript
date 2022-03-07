@@ -1,26 +1,30 @@
-// Rest Operators (...args)  and args is array
-// reduce is a array methods (video 15 arrays)
+// Default Parameters (ES6)
 
-// Rest Operators
-function sum(...args) {
-    // console.log(args);  // args is array
+// the old way
+function sum(a, b, c) {
+    a = a || 0;
+    b = b || 0;
+    c = c || 0;
 
-    // reduce method
-    // let sum = args.reduce((total, arg)=> total += arg)
-    // return sum
-
-    //or
-    return args.reduce((a, b) => (a += b));
+    return a + b + c;
 }
 
-// console.log('Sum: '+ sum(2, 9, 5, 8, 7, 3));
+console.log(sum(2)); // 2
+console.log(sum(2, 9)); // 11
+console.log(sum(5, 15, 10)); // 30
 
-
-function ShowTotals(a, b, ...args) {
-    console.log(a);
-    console.log(b);
-    console.log(args);
+//--------------------------------------------
+// the new way ES6
+function sum1(a = 0, b = 0, c = 0) {
+    return a + b + c;
 }
-ShowTotals(1, 2, 3, 4, 5, 6, 7)
 
+console.log(sum1(13, 7));
+console.log(sum1(13));
 
+function sum2(b, a = 0, c = 0) {
+    return a + b + c;
+}
+
+console.log(sum2(13));
+console.log(sum2(13, 7));
