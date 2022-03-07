@@ -312,6 +312,13 @@ Function `Arguments`
 
 ## Part 24
 
+Rest Operators `(...args)`
+
+<br>
+
+`Uninstall Expression: TabNine.tabnine-vscode `
+
+[Functions Video_03](https://megajs.com/?p=2716 "Megajs")
 <br><br>
 
 ---

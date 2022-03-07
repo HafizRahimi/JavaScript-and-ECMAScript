@@ -1,23 +1,26 @@
-// Function Arguments
-// arguments is is a Object ( type: Symbol.iterator) and we can do loop
+// Rest Operators (...args)  and args is array
+// reduce is a array methods (video 15 arrays)
 
-function sum(x, y) {
-    console.log(arguments); // is a Object (Symbol.iterator)
-    let total= 0;
+// Rest Operators
+function sum(...args) {
+    // console.log(args);  // args is array
 
-    for (const iterator of arguments) {
-        total = total + iterator
-    }
+    // reduce method
+    // let sum = args.reduce((total, arg)=> total += arg)
+    // return sum
 
-    // for (const arg of arguments) {
-    //     total += arg
-    // }
-
-    return total; 
-    // return x + y;
+    //or
+    return args.reduce((a, b) => (a += b));
 }
 
-// console.log(sum(2, 3));  //5
-// console.log(sum(2));  //NaN : 2 + undefined
+// console.log('Sum: '+ sum(2, 9, 5, 8, 7, 3));
 
-console.log(sum(2, 3, 9, 34, 6, 8 ,3 ));  // arguments
+
+function ShowTotals(a, b, ...args) {
+    console.log(a);
+    console.log(b);
+    console.log(args);
+}
+ShowTotals(1, 2, 3, 4, 5, 6, 7)
+
+
