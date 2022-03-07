@@ -300,6 +300,12 @@ Function `Expression`
 
 ## Part 23
 
+Function `Arguments`
+
+<br>
+
+[Functions Video_02](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---
