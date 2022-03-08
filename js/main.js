@@ -1,54 +1,27 @@
-// Try & Catch
+// Let and Const
 
-var person = {
-    fName: 'Hafiz',
-    lName: 'Rahimi',
+var x = 30;
 
-    // Getter
-    get fullName() {
-        return `${person.fName} ${person.lName}`;
-    },
+// ES6
+let y = 10;
+const z = 40;
 
-    // Setter
-    set fullName(value) {
-        // if(typeof value !== 'string') return
+const b = { name: 'Ali' };
+const k = [1, 3, 4, 5, 6]
 
-        if(typeof value !== 'string') {
-            // create a Error
-            throw new Error('Please enter Valid String')
-        }
+x = 'b';
+y = 'd';
+// z = 's';
 
-        var name = value.split(' ');
-        if (name.length === 1) {
-            throw new Error('Please enter first name and last name!')
-        }
+b.lastName = 'Nori';
+b.name = 'Hamid';
 
-        this.fName = name[0];
-        this.lName = name[1]
+k[0] = 1000;
 
-        if (name[1] === '') {
-            throw new Error('Please enter last name!')
-        }
-    },
-};
+console.log(x);
+console.log(y);
+console.log(z);
 
+console.log(b);
 
-// Try & Catch
-try {
-    // person.fullName = null;
-
-    person.fullName = 'Ali';
-
-    // person.fullName = 'Ali ';
-    // person.fullName = 'Ali Nori';
-
-} catch (error) {
-    if (error =='Error: Please enter last name!') {
-        // log error 
-        console.error(error)
-    }else{
-        alert(error)
-    }
-}
-
-console.log(person.fullName);
+console.log(k);

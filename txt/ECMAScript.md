@@ -361,6 +361,12 @@ Try & Catch
 
 ## Part 27
 
+Let and Const
+
+<br>
+
+[Functions Video_07](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---
