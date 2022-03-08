@@ -337,6 +337,12 @@ Default Parameters (ES6)
 
 ## Part 26
 
+Setter and Getter
+
+<br>
+
+[Functions Video_05](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---

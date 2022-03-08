@@ -1,30 +1,47 @@
-// Default Parameters (ES6)
+// Setter and Getter For Function
 
-// the old way
-function sum(a, b, c) {
-    a = a || 0;
-    b = b || 0;
-    c = c || 0;
+var person = {
+    fName: 'Hafiz',
+    lName: 'Rahimi',
 
-    return a + b + c;
-}
+    //The old way Create a Method
+    // fullName: function () {
+    //     return `${person.fName} ${person.lName}`
+    // },
 
-console.log(sum(2)); // 2
-console.log(sum(2, 9)); // 11
-console.log(sum(5, 15, 10)); // 30
+    // fullName:() =>  `${person.fName} ${person.lName}`,
 
-//--------------------------------------------
-// the new way ES6
-function sum1(a = 0, b = 0, c = 0) {
-    return a + b + c;
-}
+    // The new way Create a Method
+    // fullName() {
+    //     return `${person.fName} ${person.lName}`
+    // }
 
-console.log(sum1(13, 7));
-console.log(sum1(13));
+    // Getter
+    get fullName() {
+        return `${person.fName} ${person.lName}`;
+    },
 
-function sum2(b, a = 0, c = 0) {
-    return a + b + c;
-}
+    // Setter
+    set fullName(value) {
+        var name = value.split(' ');
+        // console.log(name);
 
-console.log(sum2(13));
-console.log(sum2(13, 7));
+        this.fName = name[0];
+        this.lName = name[1]
+    },
+};
+
+
+// console.log(`${person.fName} ${person.lName}`);
+// console.log(person.fullName()); // have not Get and Set
+
+
+//Getter
+console.log(person.fullName);
+
+
+// Setter
+person.fullName = 'Ali Nori';
+
+console.log(person);
+console.log(person.fullName);
