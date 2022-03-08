@@ -1,27 +1,38 @@
-// Let and Const
+// var is Function Scope.
+// Let and Const are Block Scope.
 
-var x = 30;
+// var 
+{
+    var x = 30;
+}
+console.log(x);
+
+// Function Scope
+function name(params) {
+    var b = 19;
+}
+// console.log(b); // erorr
+
 
 // ES6
-let y = 10;
-const z = 40;
+// let and const 
 
-const b = { name: 'Ali' };
-const k = [1, 3, 4, 5, 6]
+// Global scope
+const w = 23; 
 
-x = 'b';
-y = 'd';
-// z = 's';
+// Block Scope
+{
+    let y = 10;
+    const z = 40;
+    console.log(y, z); 
+    console.log(w);
+    {
+        // w = 700; //error 
+        const w = 700; 
+        console.log(w);
+    }
+}
+// console.log(y, z); // error
 
-b.lastName = 'Nori';
-b.name = 'Hamid';
 
-k[0] = 1000;
 
-console.log(x);
-console.log(y);
-console.log(z);
-
-console.log(b);
-
-console.log(k);

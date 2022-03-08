@@ -373,6 +373,15 @@ Let and Const
 
 ## Part 28
 
+Global Scope, Function Scope and Block Scope
+1. Global Scope  
+2. Var is Function Scope.
+3. Let and Const are Block Scope.
+
+<br>
+
+[Functions Video_08](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---
