@@ -388,6 +388,12 @@ Global Scope, Function Scope and Block Scope
 
 ## Part 29
 
+Arrow Function
+
+<br>
+
+[Functions Video_09](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---

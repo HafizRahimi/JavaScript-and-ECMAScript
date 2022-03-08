@@ -1,38 +1,24 @@
-// var is Function Scope.
-// Let and Const are Block Scope.
+// Arrow Function (ES6)
 
-// var 
-{
-    var x = 30;
+function sum(a, b) {
+    return a + b;
 }
-console.log(x);
 
-// Function Scope
-function name(params) {
-    var b = 19;
+// Arrow Function (ES6)
+
+// var multiple = (a, b) =>{
+//     return a * b
+// }
+
+var multiple = (a, b) => a * b;
+
+var array = [1, 2, 3, 4, 5];
+function count(array) {
+    return array.forEach(element => console.log(element));
 }
-// console.log(b); // erorr
 
+count(array)
 
-// ES6
-// let and const 
+console.log(sum(2, 8));
 
-// Global scope
-const w = 23; 
-
-// Block Scope
-{
-    let y = 10;
-    const z = 40;
-    console.log(y, z); 
-    console.log(w);
-    {
-        // w = 700; //error 
-        const w = 700; 
-        console.log(w);
-    }
-}
-// console.log(y, z); // error
-
-
-
+console.log(multiple(5, 5));
