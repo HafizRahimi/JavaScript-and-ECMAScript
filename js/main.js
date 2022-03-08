@@ -1,20 +1,8 @@
-// Setter and Getter For Function
+// Try & Catch
 
 var person = {
     fName: 'Hafiz',
     lName: 'Rahimi',
-
-    //The old way Create a Method
-    // fullName: function () {
-    //     return `${person.fName} ${person.lName}`
-    // },
-
-    // fullName:() =>  `${person.fName} ${person.lName}`,
-
-    // The new way Create a Method
-    // fullName() {
-    //     return `${person.fName} ${person.lName}`
-    // }
 
     // Getter
     get fullName() {
@@ -23,25 +11,44 @@ var person = {
 
     // Setter
     set fullName(value) {
+        // if(typeof value !== 'string') return
+
+        if(typeof value !== 'string') {
+            // create a Error
+            throw new Error('Please enter Valid String')
+        }
+
         var name = value.split(' ');
-        // console.log(name);
+        if (name.length === 1) {
+            throw new Error('Please enter first name and last name!')
+        }
 
         this.fName = name[0];
         this.lName = name[1]
+
+        if (name[1] === '') {
+            throw new Error('Please enter last name!')
+        }
     },
 };
 
 
-// console.log(`${person.fName} ${person.lName}`);
-// console.log(person.fullName()); // have not Get and Set
+// Try & Catch
+try {
+    // person.fullName = null;
 
+    person.fullName = 'Ali';
 
-//Getter
-console.log(person.fullName);
+    // person.fullName = 'Ali ';
+    // person.fullName = 'Ali Nori';
 
+} catch (error) {
+    if (error =='Error: Please enter last name!') {
+        // log error 
+        console.error(error)
+    }else{
+        alert(error)
+    }
+}
 
-// Setter
-person.fullName = 'Ali Nori';
-
-console.log(person);
 console.log(person.fullName);

@@ -349,6 +349,12 @@ Setter and Getter
 
 ## Part 26
 
+Try & Catch
+
+<br>
+
+[Functions Video_06](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---
