@@ -404,14 +404,75 @@ this Keyword `Part1`:
 1. `this` in method: `Object`
 2. `this` in function: `window, global(node)`
 
+
+
+[Functions Video_10](https://megajs.com/?p=2716 "Megajs")
+
 <br>
 
-[Functions Video_09](https://megajs.com/?p=2716 "Megajs")
+this Keyword `Part1`:
+
+those Methods can refer this to any object and any function: 
+1. `call()`
+2. `apply()`
+3. `bind() `
+
+[Functions Video_11](https://megajs.com/?p=2716 "Megajs")
 
 <br><br>
 
 ---
 
+## Part 31
+
+<br><br>
+
+---
+## Part 32
+
+<br><br>
+
+---
+## Part 33
+
+<br><br>
+
+---
+## Part 34
+
+<br><br>
+
+---
+## Part 35
+
+<br><br>
+
+---
+## Part 36
+
+<br><br>
+
+---
+## Part 37
+
+<br><br>
+
+---
+## Part 38
+
+<br><br>
+
+---
+## Part 39
+
+<br><br>
+
+---
+## Part 40
+
+<br><br>
+
+---
 ## Part 00
 
 <br><br>
