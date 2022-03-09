@@ -1,24 +1,44 @@
-// Arrow Function (ES6)
+// this Keyword part1
+// this in method  ===> Object
+// this in function ===> window, global(node)
 
-function sum(a, b) {
-    return a + b;
+
+
+// this in method  ===> Object
+var obj = {
+    title: 'a',
+    tags: [1, 3, 2, 4, 5],
+
+    // method
+    body() {
+        // this: Object
+        console.log(this);
+    },
+};
+
+obj.body();
+
+
+// this in function ===> window
+function sum() {
+    // this: window
+    console.log(this);
 }
+sum();
+console.log('-------------------------------------------');
 
-// Arrow Function (ES6)
 
-// var multiple = (a, b) =>{
-//     return a * b
-// }
+var article = {
+    title: 'Animal',
+    tags: [23, 45, 65, 76, 89],
 
-var multiple = (a, b) => a * b;
+    body(){
+        console.log(this);
+        this.tags.forEach(function(tag){
+            // console.log(tag);
+            console.log(this);
+        })
+    }
+};
 
-var array = [1, 2, 3, 4, 5];
-function count(array) {
-    return array.forEach(element => console.log(element));
-}
-
-count(array)
-
-console.log(sum(2, 8));
-
-console.log(multiple(5, 5));
+article.body()

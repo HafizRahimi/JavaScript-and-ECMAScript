@@ -400,6 +400,14 @@ Arrow Function
 
 ## Part 30
 
+this Keyword `Part1`:
+1. `this` in method: `Object`
+2. `this` in function: `window, global(node)`
+
+<br>
+
+[Functions Video_09](https://megajs.com/?p=2716 "Megajs")
+
 <br><br>
 
 ---
