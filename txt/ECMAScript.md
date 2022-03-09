@@ -424,6 +424,9 @@ those Methods can refer this to any object and any function:
 ---
 
 ## Part 31
+`Projects`:
+
+1. Project 01: [Video_12](https://megajs.com/?p=2716 "Megajs")
 
 <br><br>
 

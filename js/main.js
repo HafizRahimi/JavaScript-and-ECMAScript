@@ -1,57 +1,20 @@
-// this Keyword part2
-// those Methods can refer this to any object and any function: 
-// 1- call()
-// 2- apply() 
-// 3- bind() 
+// Project 1: Sun of arrays argument
+// sum(2, 5, 6)  ==> 13
+// sum([2, 5, 6]) ==> 13
+
+console.log(sum(2, 5, 6));
+console.log(sum([2, 5, 6]));
 
 
-var article = {
-    title: 'Animal',
-    tags: [1, 3, 2, 4, 5],
-
-// the old way: let that = this
-    // body(){
-    //     // console.log(this);
-    //     let that = this
-    //     this.tags.forEach(function(tag){
-    //         // console.log(tag);
-    //         console.log(`${that.title}: ${tag}`);
-    //     })
-    // }
-
-// the new way: bind()
-    // body(){
-    //     this.tags.forEach(function(tag){
-    //         console.log(`${this.title}: ${tag}`);
-    //         // console.log(this);
-    //     }.bind(this))
-    // }
-
-// the best way: Arrow function(has auto bind
-    body(){
-        this.tags.forEach(tag=> console.log(`${this.title}: ${tag}`))
+function sum(...items) {
+    console.log(items);
+    
+    if(items.length ===1 && Array.isArray(items[0])){
+        items = items[0]
+        console.log(items);
     }
-};
 
-article.body()
-console.log('-------------------------------------');
-
-
-
-// those Methods can refer this to any object and any function: 
-function video(x, y) {
-    console.log(x, y);
-    console.log(this);
+    return items.reduce((a, b) => (a + b));
 }
 
-// 1- call()
-video.call({name: 'Ali'}, 2, 3);
-console.log('-------------------------------------');
 
-// 2- apply() 
-video.apply({name: 'Hamid'}, [3, 4]);
-console.log('-------------------------------------');
-
-
-// 3- bind() 
-video.bind({name: 'Hamid'}, 7,8)()
