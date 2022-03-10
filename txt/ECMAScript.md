@@ -435,6 +435,12 @@ those Methods can refer this to any object and any function:
 ---
 ## Part 32
 
+If, else and else if
+
+<br>
+
+[If, else  Video_01](https://megajs.com/?p=2299 "Megajs")
+
 <br><br>
 
 ---

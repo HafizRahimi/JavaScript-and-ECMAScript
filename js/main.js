@@ -1,27 +1,17 @@
-// Exercise
-// Exceptions
+// if, else and else if
 
-// var numbers = [1, 2, 4, 5 ];
-var numbers = 1;
+var hour = 33 ;
 
-
-try {
-    var counter = count(numbers, 1);
-    console.log(counter);
-} catch (error) {
-    console.log(error);
-    console.log(error.message);
-
-    // console.error(error);
-    console.error(error.message);
+if (hour >= 6 && hour <= 11) {
+    console.log('Good morning');
+} else if (hour > 11 && hour <= 15) {
+    console.log('Good soon');
+} else if (hour > 15 && hour <= 20) {
+    console.log('Good Evening');
+} else if(hour > 20 && hour <= 24)console.log('Good night!');
+else if(hour >=1 && hour <= 5)console.log('Good mid night');
+else {
+    console.log('What did you do!?');
+    console.error('not in range');
 }
 
-function count(array, searchElement) {
-    if (!Array.isArray(array)) {
-        throw new Error('Please enter arrays');
-    }
-    return array.reduce((accumulator, current) => {
-        var count = current === searchElement ? 1 : 0;
-        return accumulator + count;
-    }, 0);
-}
