@@ -446,6 +446,12 @@ If, else and else if
 ---
 ## Part 33
 
+Switch
+
+<br>
+
+[Switch  Video_02](https://megajs.com/?p=2299 "Megajs")
+
 <br><br>
 
 ---

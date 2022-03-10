@@ -1,17 +1,33 @@
-// if, else and else if
+// Switch
 
-var hour = 33 ;
+var x = 2.5;
 
-if (hour >= 6 && hour <= 11) {
-    console.log('Good morning');
-} else if (hour > 11 && hour <= 15) {
-    console.log('Good soon');
-} else if (hour > 15 && hour <= 20) {
-    console.log('Good Evening');
-} else if(hour > 20 && hour <= 24)console.log('Good night!');
-else if(hour >=1 && hour <= 5)console.log('Good mid night');
-else {
-    console.log('What did you do!?');
-    console.error('not in range');
+switch (x) {
+    case 1:
+        console.log('Number 1 Selected');
+        break;
+    case 2:
+    case 2.5:
+    case 2.7:
+        console.log('Number 2 Selected');
+        break;
+    case 3:
+        console.log('Number 3 Selected');
+        break;
+    case 4:
+        console.log('Number 4 Selected');
+        break;
+    case 5:
+        console.log('Number 5 Selected');
+        break;
+
+    default:
+        console.log('Not in range');
+        break;
+}
+
+
+if (x = 5) {
+    console.log('number 5 Selected');
 }
 
