@@ -1,24 +1,28 @@
-// Project 02 (if, else) : is land scape 
+// Project 02 (if, else) : iron hack 
+// number % 3 ==> iron
+// number % 5 ==> hack
 
 
-function isLand(w, h) {
-    if (w>h) console.log('True');
-    else console.log('false');
+function ironHack(number) {
+    if (typeof number !== 'number') {
+        console.log('not a number');
+    }
+    if (number % 3 == 0 &&number % 5 == 0) {
+        console.log('Iron  and Hack');
+    }else if (number % 5 == 0) {
+        console.log('Hack');
+    }else if (number % 3 == 0 ) {
+        console.log('Iron');
+    } 
+    else{
+        console.log(number);
+    }
 }
-isLand(15, 12)
 
 
+ironHack(30)
 
-// function isLandScape(width, height) {
-//     return (width > height)? console.log('True'): console.log('False');
-// }
-// isLandScape(600,500);
 
-function isLandScape(width, height) {
-    return (width > height);
-}
-
-console.log(isLandScape(300,500));
 
 
 
