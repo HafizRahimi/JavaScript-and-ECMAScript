@@ -501,6 +501,15 @@ Do While Loop
 ---
 ## Part 38
 
+`for of` loop is `Array`
+
+Do not use `for in` over an Array if `the index order` is important.
+
+It is `better` to use a `for loop`, a `for of loop`, or `Array.forEach()` when `the order` is important.
+
+<br>
+
+[For of Loop  Video_07](https://megajs.com/?p=2299 "Megajs")
 <br><br>
 
 ---
