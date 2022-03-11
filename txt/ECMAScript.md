@@ -457,10 +457,18 @@ Switch
 ---
 ## Part 34
 
+For Loop
+
+<br>
+
+[For Loop  Video_03](https://megajs.com/?p=2299 "Megajs")
+
 <br><br>
 
 ---
 ## Part 35
+
+
 
 <br><br>
 
