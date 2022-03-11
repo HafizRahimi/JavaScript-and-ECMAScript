@@ -1,32 +1,26 @@
-// Project 01 : Max of Two Number
+// Project 02 (if, else) : is land scape 
 
 
-function maxOf(x,y){
-    if(x>y) return x
-    return y
+function isLand(w, h) {
+    if (w>h) console.log('True');
+    else console.log('false');
 }
-var numMax= maxOf(8,5);
-console.log(numMax);
+isLand(15, 12)
 
 
 
-// function maXNumber(num1, num2) {
-//     if (num1> num2) {
-//         console.log(num1);
-//     } else {
-//         console.log(num2);
-//     }
+// function isLandScape(width, height) {
+//     return (width > height)? console.log('True'): console.log('False');
 // }
+// isLandScape(600,500);
 
-function maXNumber(num1, num2) {
-    if (num1> num2)console.log(num1);
-    else console.log(num2);
-}
-maXNumber(10, 12)
-
-
-function maxNumber(num1, num2) {
-    return (num1 > num2) ? console.log(num1): console.log(num2);
+function isLandScape(width, height) {
+    return (width > height);
 }
 
-maxNumber(100,44)
+console.log(isLandScape(300,500));
+
+
+
+
+

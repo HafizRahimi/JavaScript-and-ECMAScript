@@ -517,7 +517,8 @@ It is `better` to use a `for loop`, a `for of loop`, or `Array.forEach()` when `
 
 `Projects`:
 
-1. Project 01: `Max of Two Number`  [video_08](https://megajs.com/?p=2299 "Megajs")
+1. Project 01: `if, else`  [video_08](https://megajs.com/?p=2299 "Megajs")
+2. Project 02: `if, else`  [video_09](https://megajs.com/?p=2299 "Megajs")
 
 <br><br>
 
