@@ -468,7 +468,11 @@ For Loop
 ---
 ## Part 35
 
+While Loop
 
+<br>
+
+[For Loop  Video_04](https://megajs.com/?p=2299 "Megajs")
 
 <br><br>
 
