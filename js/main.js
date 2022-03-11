@@ -1,30 +1,36 @@
-// Project 02 (if, else) : iron hack 
-// number % 3 ==> iron
-// number % 5 ==> hack
+// Project 04 (if, else and for loop) : Number is Even or Odd?
 
-
-function ironHack(number) {
-    if (typeof number !== 'number') {
-        console.log('not a number');
-    }
-    if (number % 3 == 0 &&number % 5 == 0) {
-        console.log('Iron  and Hack');
-    }else if (number % 5 == 0) {
-        console.log('Hack');
-    }else if (number % 3 == 0 ) {
-        console.log('Iron');
-    } 
-    else{
-        console.log(number);
+function numberRange(startNum, endNum) {
+    for (let num = startNum; num <= endNum; num++) {
+        if (num % 2 == 0) {
+            console.log(num);
+        }
     }
 }
+numberRange(24, 60);
 
+// function evenOrOdd(limit){
+//     for (let i = 0; i <= limit; i++) {
+//         if (i % 2 ===0) {
+//             console.log( i  + ' is Even');
+//         } else {
+//             console.log( i  + ' is Odd');
+//         }
+//     }
+// }
+// evenOrOdd(12)
 
-ironHack(30)
+function evenOrOdd(limit) {
+    let numbersEven = [];
+    let numbersOdd = [];
+    for (let i = 0; i <= limit; i++) {
+        if (i % 2 === 0) numbersEven.push(i);
+        else numbersOdd.push(i);
+    }
+    return { numbersEven, numbersOdd };
+}
 
+let rangeTo12 = evenOrOdd(12);
 
-
-
-
-
-
+console.log(rangeTo12.numbersEven);
+console.log(evenOrOdd(12).numbersOdd);
