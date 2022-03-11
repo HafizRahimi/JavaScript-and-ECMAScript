@@ -490,6 +490,12 @@ Do While Loop
 ---
 ## Part 37
 
+`For in` loop is `Object`
+
+<br>
+
+[For in Loop  Video_06](https://megajs.com/?p=2299 "Megajs")
+
 <br><br>
 
 ---

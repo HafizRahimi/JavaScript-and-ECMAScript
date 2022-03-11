@@ -1,20 +1,25 @@
-// Do While Loop
+// For in Loop (Object)
 
+let obj = {
+    Ali: 14,
+    Hamid: 23,
+    William: 13,
+};
 
-// while Loop
-let z = 12;
-while (z <= 10) {
-    if(z % 2 == 0) console.log(z);
-    z+=2;
+for (const key in obj) {
+    console.log(key);
+    console.log(obj[key]);
 }
 
 
-// Do while loop
-let x = 0;
-// let x = 12;
-do {
-    if(x % 2 == 0){
-        console.log(x);
-    }
-    x++
-} while (x<=10);
+
+
+let alphabets = {
+    a: 1,
+    b: 2,
+    c: 3,
+};
+
+for (const alphabet in alphabets) {
+console.log(`${alphabet} : ${alphabets[alphabet]}`);
+}
