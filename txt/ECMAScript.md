@@ -479,6 +479,12 @@ While Loop
 ---
 ## Part 36
 
+Do While Loop
+
+<br>
+
+[For Loop  Video_05](https://megajs.com/?p=2299 "Megajs")
+
 <br><br>
 
 ---
