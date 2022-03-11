@@ -515,6 +515,10 @@ It is `better` to use a `for loop`, a `for of loop`, or `Array.forEach()` when `
 ---
 ## Part 39
 
+`Projects`:
+
+1. Project 01: `Max of Two Number`  [video_08](https://megajs.com/?p=2299 "Megajs")
+
 <br><br>
 
 ---
