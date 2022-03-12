@@ -1,36 +1,31 @@
-// Project 04 (if, else and for loop) : Number is Even or Odd?
+// Project 05 (if, else and for in loop) : is string value?
+// for in loop is for loop in Object 
 
-function numberRange(startNum, endNum) {
-    for (let num = startNum; num <= endNum; num++) {
-        if (num % 2 == 0) {
-            console.log(num);
+let obj = {
+    a: 'ali',
+    b: 23,
+    c: false,
+    d: 'car',
+    e: 23,
+};
+
+let person = {
+    name : 'Navid',
+    family: 'Nori',
+    age: '20',
+    isDeveloper: false
+}
+
+// console.log( typeof obj.b);
+
+// isStringValue(obj);
+isStringValue(person);
+
+
+function isStringValue(obj) {
+    for (const key in obj) {
+        if (typeof obj[key] === 'string') {
+            console.log(key +' : '+ obj[key]);
         }
     }
 }
-numberRange(24, 60);
-
-// function evenOrOdd(limit){
-//     for (let i = 0; i <= limit; i++) {
-//         if (i % 2 ===0) {
-//             console.log( i  + ' is Even');
-//         } else {
-//             console.log( i  + ' is Odd');
-//         }
-//     }
-// }
-// evenOrOdd(12)
-
-function evenOrOdd(limit) {
-    let numbersEven = [];
-    let numbersOdd = [];
-    for (let i = 0; i <= limit; i++) {
-        if (i % 2 === 0) numbersEven.push(i);
-        else numbersOdd.push(i);
-    }
-    return { numbersEven, numbersOdd };
-}
-
-let rangeTo12 = evenOrOdd(12);
-
-console.log(rangeTo12.numbersEven);
-console.log(evenOrOdd(12).numbersOdd);
