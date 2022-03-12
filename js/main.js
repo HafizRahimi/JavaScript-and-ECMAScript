@@ -1,31 +1,19 @@
-// Project 05 (if, else and for in loop) : is string value?
-// for in loop is for loop in Object 
+// Project 06 (if, else and for loop) : Sum of multiple
 
-let obj = {
-    a: 'ali',
-    b: 23,
-    c: false,
-    d: 'car',
-    e: 23,
-};
-
-let person = {
-    name : 'Navid',
-    family: 'Nori',
-    age: '20',
-    isDeveloper: false
-}
-
-// console.log( typeof obj.b);
-
-// isStringValue(obj);
-isStringValue(person);
-
-
-function isStringValue(obj) {
-    for (const key in obj) {
-        if (typeof obj[key] === 'string') {
-            console.log(key +' : '+ obj[key]);
+function multiple(limit) {
+    let sum = 0;
+    let totals = '';
+    for (let i = 0; i <= limit; i++) {
+        if (i % 3 === 0 || i % 5 === 0) {
+            sum += i;
+            if (i !== 0) {
+                if (totals === '') totals += `${i}`;
+                else totals += ` + ${i}`;
+            }
         }
     }
+    let result = `${totals} = ${sum}`;
+    console.log(result);
 }
+
+let total = multiple(9);
