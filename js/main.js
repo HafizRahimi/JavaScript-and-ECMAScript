@@ -1,37 +1,37 @@
-// Learn Arrays Part_04  : Finding an Element (Primitive type) 
+// Learn Arrays Part_05  : Finding an Element (Reference type)
 
 // Primitive type: boolean, sting, number
 // Reference type: function, array and object
 
+let courses = [
+    {
+        id: 1,
+        name: 'JS',
+    },
+    {
+        id: 2,
+        name: 'SASS',
+    },
+];
+
+// array.find(): elements value
+var id3 = courses.find(course=> course.id === 3) // undefined
+var sass = courses.find(course=> course.name === 'SASS')
+var firstCourse = courses.find(course=> course.id === 1)
+
+// array.findIndex(): elements index
+var react = courses.findIndex(course=> course.name === 'React') // index -1 : Has Not
+var js = courses.findIndex(course=> course.name === 'JS') // index 0
 
 
-let array = [1, 2, 3, 4, 2, 6, 2, 8];
 
-// indexOf and lastIndexOf: index element
-var a = array.indexOf(9); // index -1: has Not
+console.log(id3);
+console.log(sass);
+console.log(firstCourse);
 
-var b = array.indexOf(2); // index 1
-// array.indexOf(element, start)
-var c = array.indexOf(2, 2); // index 4
-
-var d = array.lastIndexOf(2); // index 6
-// array.lastIndexOf(element, start)
-var e = array.lastIndexOf(2, 5); // index 4
-
-// includes: true or false
-var x = array.includes(10); // false
-var z = array.includes(4); // true
+console.log(react);
+console.log(js);
 
 
-console.log(a);
-
-console.log(b);
-console.log(c);
-
-console.log(d);
-console.log(e);
-
-console.log(x);
-console.log(z);
 
 

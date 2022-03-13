@@ -578,6 +578,8 @@ Removing Elements:
 2. array.lastIndexOf()
 3. array.includes()
 
+<br>
+
 Types:
 1. `Primitive type`: boolean, sting, number
 2. `Reference type`: function, array and object
@@ -590,6 +592,21 @@ Types:
 
 ---
 ## Part 05 Arrays
+
+`Finding` an Element (`Reference type`):
+1. array.find()
+2. array.findIndex()
+
+<br>
+
+Types:
+1. `Primitive type`: boolean, sting, number
+2. `Reference type`: function, array and object
+
+<br>
+
+[Arrays  Video_05](https://megajs.com/?p=2547 "Megajs")
+
 
 <br><br>
 
