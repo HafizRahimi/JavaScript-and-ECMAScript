@@ -1,19 +1,39 @@
-// Project 06 (if, else and for loop) : Sum of multiple
+// Project 07 (if, else and for of loop) : Grade
 
-function multiple(limit) {
-    let sum = 0;
-    let totals = '';
-    for (let i = 0; i <= limit; i++) {
-        if (i % 3 === 0 || i % 5 === 0) {
-            sum += i;
-            if (i !== 0) {
-                if (totals === '') totals += `${i}`;
-                else totals += ` + ${i}`;
-            }
-        }
+let courses = [20, 18, 15, 19, 17, 16, 20.12];
+
+function showGrade(arr) {
+    totalCourses = 0;
+    let grade = 0;
+    for (const course of arr) {
+        totalCourses += course;
+        // console.log(totalCourses);
     }
-    let result = `${totals} = ${sum}`;
-    console.log(result);
+    grade = totalCourses / arr.length;
+    console.log(grade);
+}
+showGrade(courses);
+
+
+
+
+
+let marks = [20, 10, 10, 10];
+
+function grade(marks) {
+    let sum = 0;
+    for (const mark of marks) {
+        sum += mark;
+    }
+    let average = sum / marks.length;
+    console.log(average);
+    if(average <= 20 && average >= 18) return "Very Good";
+    if(average < 18 && average >= 16 ) return "Good";
+    if(average < 16 && average >= 12 ) return "Not bad";
+    if(average < 12 && average >= 10 ) return "Bad";
+    if(average < 10 && average >= 0 ) return "Very Very Bad";
 }
 
-let total = multiple(9);
+console.log(grade(marks));
+
+
