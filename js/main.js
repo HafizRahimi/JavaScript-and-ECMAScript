@@ -1,7 +1,6 @@
-// Learn Arrays Part_05  : Finding an Element (Reference type)
+// Learn Arrays Part_06  : Arrow Function
 
-// Primitive type: boolean, sting, number
-// Reference type: function, array and object
+
 
 let courses = [
     {
@@ -14,23 +13,76 @@ let courses = [
     },
 ];
 
-// array.find(): elements value
-var id3 = courses.find(course=> course.id === 3) // undefined
-var sass = courses.find(course=> course.name === 'SASS')
-var firstCourse = courses.find(course=> course.id === 1)
+function addCourse(name) {
+    let id = courses.length + 1
+    let course = {
+        id,
+        name
+    }
+    // console.log(id);
+    courses.push(course)
+}
 
-// array.findIndex(): elements index
-var react = courses.findIndex(course=> course.name === 'React') // index -1 : Has Not
-var js = courses.findIndex(course=> course.name === 'JS') // index 0
+addCourse('React')
+addCourse('Angolar')
 
 
 
-console.log(id3);
-console.log(sass);
-console.log(firstCourse);
+function deleteCourse(name) {
+    let course = courses.findIndex(course => course.name === name)
+    // console.log(course);
+    courses.splice(course,1)
+}
 
-console.log(react);
-console.log(js);
+deleteCourse('React')
+
+
+
+function updateCourse(name, nameChange) {
+    let course = courses.findIndex(course => course.name === name);
+    let id = courses.find(course => course.name === name).id;
+    // console.log(course);
+    let newCourse = {
+        id,
+        name : nameChange
+    }
+    courses.splice(course,1, newCourse)
+}
+
+updateCourse('JS' , 'Javascript')
+
+
+
+
+
+
+
+
+function login(id, name){
+    let userName = courses.find(course => course.name === name)
+    let userId = courses.find(course => course.name === name).id
+
+    if(userName !== undefined && userId === id) return console.log('Login');
+    else return console.error('Course name or course id NOT FINDED ');
+
+    // if(userName !== undefined) console.log(userName.name);
+    // else console.log('Course Name not find');
+
+    // if(userId == id) console.log(userId.id);
+    // else console.log('Course Id not find');
+
+}
+
+login(3,'SASS')
+
+
+
+
+// console.log(courses);
+
+
+
+
 
 
 

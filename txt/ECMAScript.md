@@ -613,6 +613,12 @@ Types:
 ---
 ## Part 06 Arrays
 
+Arrow function
+
+<br>
+
+[Arrays  Video_06](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
