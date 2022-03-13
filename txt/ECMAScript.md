@@ -524,6 +524,7 @@ It is `better` to use a `for loop`, a `for of loop`, or `Array.forEach()` when `
 5. Project 05: `if and for in loop`  [video_12](https://megajs.com/?p=2299 "Megajs")
 6. Project 06: `if, else and for loop`  [video_13](https://megajs.com/?p=2299 "Megajs")
 7. Project 07: `if and for of loop`  [video_14](https://megajs.com/?p=2299 "Megajs")
+8. Project 08: ` Two for loops`  [video_15](https://megajs.com/?p=2299 "Megajs")
 
 <br><br>
 
