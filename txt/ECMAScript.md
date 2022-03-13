@@ -548,7 +548,7 @@ let array = []
 Adding Elements:
 1. Beginning : `array.unshift()`
 2. End : `array.push()`
-3. Middle : `array.splice()`
+3. Middle : `array.splice(,0,)`
 
 <br>
 
@@ -558,6 +558,15 @@ Adding Elements:
 
 ---
 ## Part 03 Arrays
+
+Removing Elements:
+1. Beginning : `array.shift()`
+2. End : `array.pop()`
+3. Middle : `array.splice(,1,)`
+
+<br>
+
+[Arrays  Video_03](https://megajs.com/?p=2547 "Megajs")
 
 <br><br>
 

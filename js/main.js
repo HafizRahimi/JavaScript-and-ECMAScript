@@ -1,30 +1,27 @@
-// Learn Arrays Part_02  : Adding Elements
+// Learn Arrays Part_03  : Removing Elements
 // Adding Elements:
-// 1- add Beginning Array
-// 2- add End Of Array
-// 3- add Middle Array
+// 1- delete Beginning Array
+// 2- delete End Of Array
+// 3- delete Middle Array
 
 
-
-let testArr=[{ElementName:'info', name:'Ali' },{ElementName:'address', name:'Ali' }]
-let array = [5,6]
+let array = [1, 2, 3, 4, 5, 6, 7, 8]
 
 // Beginning 
-array.unshift(1, 2, 3)
-testArr.unshift({id:48374837})
+let first = array.shift()
+
 
 // End 
-array.push(7, 8)
-testArr.push(2022)
+let last = array.pop()
 
 
 // Middle 
-// array.splice(start, delete, Elements)
-array.splice(3,0,4)
-testArr.splice(1,0,{job: 'developer'})
-
-
+// array.splice(start, delete, elements)
+// array.splice(2,1) // delete 1 element
+// array.splice(2, 2) // delete 2 element
+array.splice(2, 2, 10) // delete 2 element and add element 10
 
 
 console.log(array);
-console.log(testArr);
+console.log(first);
+console.log(last);
