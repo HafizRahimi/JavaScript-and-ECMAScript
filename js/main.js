@@ -1,12 +1,14 @@
-// Project 08 (Two for Loops) : Stars
+// Learn Arrays : create a array
 
+let arr = [1, 2, 3, 4];
 
-let rows = 10;
+console.log(arr[0]);
+console.log(arr[3]);
 
-for (let row = 1; row < rows; row++) {
-    let stars = '';
-    for (let i = 0; i < row; i++) {
-        stars += '*';
-    }
-    console.log(stars);
-}
+let array = [
+    {name: 'William'},
+    {family: 'Johann'}
+]
+
+console.log(array[0].name);
+console.log(array[1].family);

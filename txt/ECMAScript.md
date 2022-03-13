@@ -531,6 +531,15 @@ It is `better` to use a `for loop`, a `for of loop`, or `Array.forEach()` when `
 ---
 ## Part 40
 
+Create a Array
+
+let array = []
+
+
+<br>
+
+[Arrays  Video_01](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
