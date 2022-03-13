@@ -529,7 +529,7 @@ It is `better` to use a `for loop`, a `for of loop`, or `Array.forEach()` when `
 <br><br>
 
 ---
-## Part 40
+## Part 01 Arrays
 
 Create a Array
 
@@ -543,6 +543,78 @@ let array = []
 <br><br>
 
 ---
+## Part 02 Arrays
+
+Adding Elements:
+1. Beginning : `array.unshift()`
+2. End : `array.push()`
+3. Middle : `array.splice()`
+
+<br>
+
+[Arrays  Video_02](https://megajs.com/?p=2547 "Megajs")
+
+<br><br>
+
+---
+## Part 03 Arrays
+
+<br><br>
+
+---
+## Part 04 Arrays
+
+<br><br>
+
+---
+## Part 05 Arrays
+
+<br><br>
+
+---
+## Part 06 Arrays
+
+<br><br>
+
+---
+## Part 07 Arrays
+
+<br><br>
+
+---
+## Part 08 Arrays
+
+<br><br>
+
+---
+## Part 09 Arrays
+
+<br><br>
+
+---
+## Part 10 Arrays
+
+<br><br>
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## Part 00
 
 <br><br>
