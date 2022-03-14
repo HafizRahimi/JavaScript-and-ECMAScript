@@ -656,6 +656,15 @@ Combine & Slice
 ---
 ## Part 09 Arrays
 
+`Combine`: 
+
+`Spread Operators (ES6)` ==>  ...array
+
+
+<br>
+
+[Arrays  Video_09](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
