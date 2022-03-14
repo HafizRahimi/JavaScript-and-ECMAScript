@@ -670,6 +670,15 @@ Combine & Slice
 ---
 ## Part 10 Arrays
 
+`Iterating` an Array:
+1. `for of Loop`
+2. `forEach Method`
+
+
+<br>
+
+[Arrays  Video_10](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
