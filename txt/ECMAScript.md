@@ -639,6 +639,18 @@ Emptying an Array:
 ---
 ## Part 08 Arrays
 
+Combine & Slice 
+
+`Combine` : array`.concat()`
+
+`Slice` : array`.slice()`
+
+
+
+<br>
+
+[Arrays  Video_08](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---

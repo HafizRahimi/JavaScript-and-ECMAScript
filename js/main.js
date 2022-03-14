@@ -1,26 +1,26 @@
-// Learn Arrays Part_07  : Emptying an Array
-// 1. .length
-// 2. .pop()
-// 3. .splice()
+// Learn Arrays Part_08  : Combine & Slice
+// Combine : array.concat()
+// Slice : array.slice()
+
+let first = [1, 2, 3, 4];
+let second = [5, 6, 7, 8];
 
 
+// Combine
+let combine1 = first.concat(5,6);
+let combine2 = first.concat(second);
+let combine3 = combine2.concat(9,10);
 
 
-// way 1: array.length ==> Bad
-let array1 = [1, 2, 3, 4, 5];
-
-array1.length = 0;
-console.log(array1);
-
-// way 2: array.pop() ==> Bad
-let array2 = [1, 2, 3, 4, 5];
-
-while(array2.length > 0) array2.pop()
-console.log(array2);
+console.log(combine1);
+console.log(combine2);
+console.log(combine3);
 
 
-// way 3: array3.splice() ==> Good
-let array3 = [1, 2, 3, 4, 5];
+// Slice 
+let slice1 = combine3.slice(0,5)
+let slice2 = combine3.slice(5)
 
-array3.splice(0,array3.length)
-console.log(array3);
+
+console.log(slice1);
+console.log(slice2);
