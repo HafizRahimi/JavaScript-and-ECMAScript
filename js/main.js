@@ -1,89 +1,26 @@
-// Learn Arrays Part_06  : Arrow Function
-
-
-
-let courses = [
-    {
-        id: 1,
-        name: 'JS',
-    },
-    {
-        id: 2,
-        name: 'SASS',
-    },
-];
-
-function addCourse(name) {
-    let id = courses.length + 1
-    let course = {
-        id,
-        name
-    }
-    // console.log(id);
-    courses.push(course)
-}
-
-addCourse('React')
-addCourse('Angolar')
-
-
-
-function deleteCourse(name) {
-    let course = courses.findIndex(course => course.name === name)
-    // console.log(course);
-    courses.splice(course,1)
-}
-
-deleteCourse('React')
-
-
-
-function updateCourse(name, nameChange) {
-    let course = courses.findIndex(course => course.name === name);
-    let id = courses.find(course => course.name === name).id;
-    // console.log(course);
-    let newCourse = {
-        id,
-        name : nameChange
-    }
-    courses.splice(course,1, newCourse)
-}
-
-updateCourse('JS' , 'Javascript')
+// Learn Arrays Part_07  : Emptying an Array
+// 1. .length
+// 2. .pop()
+// 3. .splice()
 
 
 
 
+// way 1: array.length ==> Bad
+let array1 = [1, 2, 3, 4, 5];
+
+array1.length = 0;
+console.log(array1);
+
+// way 2: array.pop() ==> Bad
+let array2 = [1, 2, 3, 4, 5];
+
+while(array2.length > 0) array2.pop()
+console.log(array2);
 
 
+// way 3: array3.splice() ==> Good
+let array3 = [1, 2, 3, 4, 5];
 
-
-function login(id, name){
-    let userName = courses.find(course => course.name === name)
-    let userId = courses.find(course => course.name === name).id
-
-    if(userName !== undefined && userId === id) return console.log('Login');
-    else return console.error('Course name or course id NOT FINDED ');
-
-    // if(userName !== undefined) console.log(userName.name);
-    // else console.log('Course Name not find');
-
-    // if(userId == id) console.log(userId.id);
-    // else console.log('Course Id not find');
-
-}
-
-login(3,'SASS')
-
-
-
-
-// console.log(courses);
-
-
-
-
-
-
-
-
+array3.splice(0,array3.length)
+console.log(array3);

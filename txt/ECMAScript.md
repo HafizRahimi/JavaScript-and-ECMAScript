@@ -624,6 +624,16 @@ Arrow function
 ---
 ## Part 07 Arrays
 
+Emptying an Array:
+
+1. array`.length`
+2. while(array.length > 0) array`.pop()`
+3. array`.splice`(0,array.length)
+
+<br>
+
+[Arrays  Video_07](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
