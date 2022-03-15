@@ -683,19 +683,66 @@ Combine & Slice
 
 ---
 
+## Part 11 Arrays
+
+**`Array to string and string to Array`**
+
+`Join method `and `Split method`
+
+<br>
+
+1- The `join() method` returns an array as a `string`.
+
+Any separator can be specified. The default is comma (,).
+
+[array.join(separator)](https://www.w3schools.com/jsref/jsref_join.asp "w3schools.com")
+
+<br>
 
 
 
+2- The `split() method` splits `a string` into` an array` of substrings.
+
+The split() method returns the new array.
+
+If `(" ")` is used as separator, the string is split `between words`.
+
+[string.split(separator, limit)](https://www.w3schools.com/jsref/jsref_split.asp "w3schools.com")
+
+<br>
 
 
 
+[Arrays  Video_11](https://megajs.com/?p=2547 "Megajs")
 
+<br><br>
 
+---
+## Part 12 Arrays
 
+<br><br>
 
+---
+## Part 13 Arrays
 
+<br><br>
 
+---
+## Part 14 Arrays
 
+<br><br>
+
+---
+## Part 15 Arrays
+
+<br><br>
+
+---
+## Part 16 Arrays
+
+<br><br>
+
+---
 
 
 
