@@ -1,32 +1,18 @@
-// Learn Arrays Part_11  : Sorting an Array (Primitives Types)
-// 1- array.sort()
-// 2- array.reverse()
+// Learn Arrays Part_13  : Filtering an Array
+// array.filter()
 
 
 
+let array = [2, 0,-3, 5, -8, 3, 7, -1, 6, 3]; 
 
-let array1 = [2, 9, 5, 8, 3, 7, 1, 6, 3]; 
-let array2 = ["b", "d", 'c', 'a', 'e', 'g', 'z']; 
-let array3 = ["b", "d", 'C', 'a', 'E', 'g', 'z']; 
 
-// 1- sort Method
-array1.sort();
-console.log(array1);
+// filter Method
+let filtered = array.filter(value => value >= 0)
 
-array2.sort();
-console.log(array2);
+let filtered2 = array.filter((value,index)=>index < 3)
 
-array3.sort();
-console.log(array3);
+console.log(filtered);
+console.log(filtered2);
 
-// 2- reverse Method
-array1.reverse();
-// OR: sort((a, b) => b-a)
-// array1.sort((a, b) => b-a);
-console.log(array1);
-
-array2.reverse()
-console.log(array2);
-
-array3.reverse()
-console.log(array3);
+filtered.sort()
+console.log(filtered);

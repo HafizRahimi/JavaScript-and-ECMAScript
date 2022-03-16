@@ -752,8 +752,30 @@ The reverse() method `overwrites` the original array.
 
 <br><br>
 
+
+
+
+
 ---
 ## Part 13 Arrays
+
+**`Filtering an Array`**
+
+`Filter method `
+
+<br>
+
+The `filter()` method `creates a new array` filled with elements that pass a test provided by a function.
+
+The filter() method does not execute the function for `empty elements`.
+
+The filter() method `does not change` the original array.
+
+[array.filter(function(currentValue, index, arr), thisValue)](https://www.w3schools.com/jsref/jsref_filter.asp "w3schools.com")
+
+<br>
+
+[Arrays  Video_13](https://megajs.com/?p=2547 "Megajs")
 
 <br><br>
 
