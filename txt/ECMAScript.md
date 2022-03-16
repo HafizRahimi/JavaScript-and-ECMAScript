@@ -717,8 +717,38 @@ If `(" ")` is used as separator, the string is split `between words`.
 
 <br><br>
 
+
+
+
+
 ---
 ## Part 12 Arrays
+
+**`Sorting an Array (Primitives Types)`**
+
+`Sort method `and `Reverse method`
+
+<br>
+
+1- The `sort()` sorts the elements of an array.
+
+The sort() `overwrites` the original array.
+
+The sort() sorts the elements as strings in alphabetical and ascending order.
+
+[array.sort(compareFunction)](https://www.w3schools.com/jsref/jsref_sort.asp "w3schools.com")
+
+<br>
+
+2- The `reverse()` method reverses the order of the elements in an array.
+
+The reverse() method `overwrites` the original array.
+
+[array.reverse()](https://www.w3schools.com/jsref/jsref_reverse.asp "w3schools.com")
+
+<br>
+
+[Arrays  Video_12](https://megajs.com/?p=2547 "Megajs")
 
 <br><br>
 

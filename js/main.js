@@ -1,66 +1,32 @@
-// Learn Arrays Part_11  : Array to string and string to Array: Join method & Split method
-
-// 1- The join() method returns an array as a string.The default is comma (,)
-// 2- The split() method splits a string into an array of substrings.If (" ") is used as separator, the string is split between words.
-
-
-// joined() method
-let array = [1, 2, 3, 4];
-
-let joined = array.join() // to string (,)
-let joined1 = array.join(' ') // to string (' ')
-let joined2 = array.join(' and ') // to string (' and ')
-let joined3 = array.join('-') // to string ('-')
-
-console.log(joined);
-console.log(joined1);
-console.log(joined2);
-console.log(joined3);
+// Learn Arrays Part_11  : Sorting an Array (Primitives Types)
+// 1- array.sort()
+// 2- array.reverse()
 
 
 
 
-// split method
-let string = 'This is my message.'
-let string1 = 'This-is-my-message.'
+let array1 = [2, 9, 5, 8, 3, 7, 1, 6, 3]; 
+let array2 = ["b", "d", 'c', 'a', 'e', 'g', 'z']; 
+let array3 = ["b", "d", 'C', 'a', 'E', 'g', 'z']; 
 
+// 1- sort Method
+array1.sort();
+console.log(array1);
 
-let splitted = string.split(' ') // to Array (' ')
-let splitted1 = string1.split('-') // to Array ('-')
+array2.sort();
+console.log(array2);
 
-console.log(splitted);
-console.log(splitted1);
+array3.sort();
+console.log(array3);
 
+// 2- reverse Method
+array1.reverse();
+// OR: sort((a, b) => b-a)
+// array1.sort((a, b) => b-a);
+console.log(array1);
 
+array2.reverse()
+console.log(array2);
 
-// Example
-
-let search = 'How to use SCSS with Express'
-
-let searchLowerCase= search.toLocaleLowerCase(); // lower Case
-
-let howToUseArr = searchLowerCase.split(' ', 3) // 
-
-let searchArr= searchLowerCase.split(' '); //
-
-let searchPath= searchArr.join('-')
-
-
-console.log(searchLowerCase);
-console.log(howToUseArr);
-console.log(searchArr);
-console.log(searchPath);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+array3.reverse()
+console.log(array3);
