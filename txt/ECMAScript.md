@@ -782,6 +782,26 @@ The filter() method `does not change` the original array.
 ---
 ## Part 14 Arrays
 
+**`Mapping an Array`**
+
+`Map method `
+
+<br>
+
+map() `creates a new array` from calling a function for every array element.
+
+map() calls a function once for each element in an array.
+
+map() does not execute the function for empty elements.
+
+map() does not change `the original array`.
+
+[array.map(function(currentValue, index, arr), thisValue)](https://www.w3schools.com/jsref/jsref_map.asp "w3schools.com")
+
+<br>
+
+[Arrays  Video_14](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
