@@ -1,53 +1,39 @@
-// Learn Arrays Part_14  : Mapping an Array
-// array.map()
-
-// map method and forEach method are for Iterating an Array
-// map method is 70% faster Than forEach method.
-// map method creates a now array form the original array
+// Learn Arrays Part_15: Reducing an Array (ES5)
+// array.reduce()
 
 
-
-let array = [2, 0, 3, 7, -1, 6, 3]; 
-
-// For Each method
-let arr = [];
-array.forEach((index) =>{
-    arr.push(index + 1)
-    return arr.sort()
-})
-
-console.log(array);
-console.log(arr);
+let prices = [2000, 1000, 3000, 5000]; 
 
 
-// Map method
-let arr2= array.map(index =>{
-    // return{value: index}
-    return index + 1
-})
-arr2.sort()
-console.log(arr2);
+// The old way
+let sum1 = 0;
+for (const price of prices) {
+    sum1 += price
+}
+console.log(sum1);
+
+// let sum = 0;
+// prices.forEach(price=> sum += price)
+// console.log(sum);
 
 
-let arr3 = array.map(function(number){
-    return number + 20
-})
-console.log(arr3);
+
+// The New way : reduce()
+let reduce = prices.reduce((pricesSum, price)=>{
+    return pricesSum += price
+},1000) // let pricesSum = 1000
+
+console.log(reduce);
 
 
-let arr4 = array.map(number =>number + 100)
-console.log(arr4);
+let reduce2 = prices.reduce((pricesSum2, price)=>{
+    return pricesSum2 += price
+},0) //let = pricesSum2 = 0
+console.log(reduce2);
 
 
-let arr5 = array.map(index =>{
-    return{value: index}
-})
-let arr6 = array.map(index => ({value: index}))
-
-console.log(arr5);
-console.log(arr6);
-
-
+let reduce3 = prices.reduce((pricesSum3, price)=>pricesSum3 += price) // let pricesSum3 = 0
+console.log(reduce3);
 
 
 

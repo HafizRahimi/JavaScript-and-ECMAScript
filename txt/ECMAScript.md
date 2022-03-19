@@ -807,6 +807,26 @@ map() does not change `the original array`.
 ---
 ## Part 15 Arrays
 
+**`Reducing an Array `**
+
+`Reduce method (ES5) `
+
+<br>
+
+`The reduce()` method `executes a reducer function` for array `element`.
+
+The reduce() method `returns a single value`: the function's accumulated `result`.
+
+The reduce() method does not execute the function for `empty` array elements.
+
+The reduce() method does `not change` the `original` array.
+
+[array.reduce(function(total, currentValue, currentIndex, arr), initialValue)]( https://www.w3schools.com/jsref/jsref_reduce.asp "w3schools.com")
+
+<br>
+
+[Arrays  Video_15](https://megajs.com/?p=2547 "Megajs")
+
 <br><br>
 
 ---
