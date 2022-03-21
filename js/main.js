@@ -1,23 +1,21 @@
 // Learn Arrays Part_17
-// *? Project-02: Includes Method
+// *? Project-02-2: Includes Method
+// forEach Method
 
 let numbers = [1, 2, 3, 4];
 
-let number2= numbers.includes(2)
-console.log(number2);
-
-
 function includes(array, searchElement) {
-    for (const element of array) {
+    let output= false
+    array.forEach(element => {
         if (element === searchElement) {
-            // return searchElement
-            return true
+            output = true
         }
-    }
-    return false
+    });
+    console.log(output);
+    return output
 }
 
-let number3= includes(numbers, 3)
+let number3= includes(numbers, 5)
 console.log(number3);
 
 
