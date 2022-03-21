@@ -830,7 +830,11 @@ The reduce() method does `not change` the `original` array.
 <br><br>
 
 ---
-## Part 16 Arrays
+## Part 16 Arrays 
+
+## `Projects`:
+
+1. Project 01: `push() method and for loop`  [video_16](https://megajs.com/?p=2547 "Megajs")
 
 <br><br>
 
