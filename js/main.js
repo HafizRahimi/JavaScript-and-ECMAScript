@@ -1,21 +1,33 @@
-// Learn Arrays Part_17
-// *? Project-02-2: Includes Method
-// forEach Method
+// Learn Arrays Part_18
+// *? Project-03: Except Function
+// includes() Method, for of Loop and  forEach() Method
 
 let numbers = [1, 2, 3, 4];
 
-function includes(array, searchElement) {
-    let output= false
+let number3= except(numbers, [1,3])
+
+function except(array, excluded) {
+
+    let output= []
+
+    // * for of Loop
+    // for (const element of array) {
+    //     if (!excluded.includes(element)) {
+    //         output.push(element)
+    //     }
+    // }
+
+    // * forEch Method
     array.forEach(element => {
-        if (element === searchElement) {
-            output = true
+        if (!excluded.includes(element)) {
+            output.push(element)
         }
     });
-    console.log(output);
+
     return output
+
 }
 
-let number3= includes(numbers, 5)
 console.log(number3);
 
 
