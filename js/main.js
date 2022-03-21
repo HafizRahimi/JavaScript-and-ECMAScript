@@ -1,16 +1,26 @@
-// Learn Arrays Part_16 
-// *? Project-01: Arrays Between Range
+// Learn Arrays Part_17
+// *? Project-02: Includes Method
 
-function arrayBetweenRage(min,max) {
-    let output=[];
-    for (let i = min; i <= max; i++) {
-        output.push(i) // * Push()
+let numbers = [1, 2, 3, 4];
+
+let number2= numbers.includes(2)
+console.log(number2);
+
+
+function includes(array, searchElement) {
+    for (const element of array) {
+        if (element === searchElement) {
+            // return searchElement
+            return true
+        }
     }
-    return output
+    return false
 }
 
-let numbers= arrayBetweenRage(-9, 5)
-console.log(numbers);
+let number3= includes(numbers, 3)
+console.log(number3);
+
+
 
 
 
