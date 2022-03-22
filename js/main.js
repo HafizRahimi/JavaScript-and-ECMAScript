@@ -1,36 +1,25 @@
-// Learn Arrays Part_18
-// *? Project-03: Except Function
-// includes() Method, for of Loop and  forEach() Method
+// Learn Arrays Part_19
+// *? Project-04: Moving Function
+// splice(,1,), splice(,0,) Method and Spread Operators[...array]
 
 let numbers = [1, 2, 3, 4];
 
-let number3= except(numbers, [1,3])
+let nowNumbers = move(numbers, 4, -1);
 
-function except(array, excluded) {
+function move(array, number, offset) {
+    let index = number - 1;
+    let position = index + offset;
 
-    let output= []
-
-    // * for of Loop
-    // for (const element of array) {
-    //     if (!excluded.includes(element)) {
-    //         output.push(element)
-    //     }
-    // }
-
-    // * forEch Method
-    array.forEach(element => {
-        if (!excluded.includes(element)) {
-            output.push(element)
-        }
-    });
-
-    return output
-
+    if (position >= array.length || position < 0) {
+        console.log('ERRRRRRR');
+        return;
+    } else {
+        let output = [...array];
+        let element = output.splice(index, 1)[0];
+        console.log(element);
+        output.splice(position, 0, element);
+        return output;
+    }
 }
 
-console.log(number3);
-
-
-
-
-
+console.log(nowNumbers);

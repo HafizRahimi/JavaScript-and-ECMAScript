@@ -842,6 +842,8 @@ The reduce() method does `not change` the `original` array.
 
 4. Project 03: `Includes() Method, for of Loop and forEach() Method`  [video_18](https://megajs.com/?p=2547 "Megajs")
 
+5. Project 04: `splice(,1,), splice(,0,) Method and Spread Operators[...array]`  [video_19](https://megajs.com/?p=2547 "Megajs")
+
 
 
 <br><br>
