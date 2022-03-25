@@ -1,49 +1,25 @@
-// Learn Arrays Part_21
-// *? Project-06: GetMax Function
-// reduce() Method and for of Loop
+// Learn Arrays Part_22
+// *? Project-07: Movies Array
 
-let numbers = [21, 12, 30, 40, 29, 34 ];
+// All movies in 2019 with rating > 4   => filter()
+// Sort them by their Rating    => sort()
+// Descending order     => reverse()
+// Pick their title     => map()
 
-
-function getMax(array) {
-    if (array.length === 0) {
-        return undefined
-    }
-    
-    // For of Loop
-    // let max = 0;
-    // for (const element of array) {
-    //     if(max < element) max = element;
-    // }
-    // return max
-
-    // for Loop
-    // let max = array[0];
-    // for (let i = 0; i < array.length; i++) {
-    //     if(max < array[i]){
-    //         max = array[i]
-    //     }
-    // }
-    // return max
+let movies = [
+    { title: "a", year: 2019, rating: 4.7 },
+    { title: "b", year: 2019, rating: 3.7 },
+    { title: "c", year: 2018, rating: 4.8 },
+    { title: "d", year: 2019, rating: 4.9 }
+];
 
 
-    // reduce() Method
-    // return array.reduce((max, element) =>{
-    //     if(max < element) return element;
-    //     return max
-    // })
-
-    // OR
-    return array.reduce((accumulator, current) => (current > accumulator) ? current : accumulator);
-}
-
-console.log(getMax(numbers));
+let bestMovies19 = movies
+    .filter(m => m.year > 2018 && m.rating > 4)
+    .sort((a, b) => a.rating - b.rating)
+    .reverse()
+    .map(m => m.title)
 
 
-
-
-
-
-
-
+console.log(bestMovies19);
 
