@@ -1,29 +1,45 @@
-// Learn Arrays Part_20
-// *? Project-05: Counter Function
+// Learn Arrays Part_21
+// *? Project-06: GetMax Function
 // reduce() Method and for of Loop
 
-let numbers = [2, 2, 3, 3, 3, 4, ,4,4,4,4,,4,4];
+let numbers = [21, 12, 30, 40, 29, 34 ];
 
-let totalNumber = count(numbers, 3);
 
-function count(array, searchElement) {
+function getMax(array) {
+    if (array.length === 0) {
+        return undefined
+    }
     
-    // for..of (old way)
-    // let count= 0;
+    // For of Loop
+    // let max = 0;
     // for (const element of array) {
-    //     if(searchElement === element)count++ 
+    //     if(max < element) max = element;
     // }
-    // return count
+    // return max
 
-    // reduce() (new way)
-    return array.reduce((total, cv) =>{
-        let count = (cv === searchElement)? 1 : 0;
-        return total + count
-    },0)
+    // for Loop
+    // let max = array[0];
+    // for (let i = 0; i < array.length; i++) {
+    //     if(max < array[i]){
+    //         max = array[i]
+    //     }
+    // }
+    // return max
 
+
+    // reduce() Method
+    // return array.reduce((max, element) =>{
+    //     if(max < element) return element;
+    //     return max
+    // })
+
+    // OR
+    return array.reduce((accumulator, current) => (current > accumulator) ? current : accumulator);
 }
 
-console.log(totalNumber);
+console.log(getMax(numbers));
+
+
 
 
 
