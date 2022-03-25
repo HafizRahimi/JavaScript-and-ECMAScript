@@ -1,25 +1,33 @@
-// Learn Arrays Part_19
-// *? Project-04: Moving Function
-// splice(,1,), splice(,0,) Method and Spread Operators[...array]
+// Learn Arrays Part_20
+// *? Project-05: Counter Function
+// reduce() Method and for of Loop
 
-let numbers = [1, 2, 3, 4];
+let numbers = [2, 2, 3, 3, 3, 4, ,4,4,4,4,,4,4];
 
-let nowNumbers = move(numbers, 4, -1);
+let totalNumber = count(numbers, 3);
 
-function move(array, number, offset) {
-    let index = number - 1;
-    let position = index + offset;
+function count(array, searchElement) {
+    
+    // for..of (old way)
+    // let count= 0;
+    // for (const element of array) {
+    //     if(searchElement === element)count++ 
+    // }
+    // return count
 
-    if (position >= array.length || position < 0) {
-        console.log('ERRRRRRR');
-        return;
-    } else {
-        let output = [...array];
-        let element = output.splice(index, 1)[0];
-        console.log(element);
-        output.splice(position, 0, element);
-        return output;
-    }
+    // reduce() (new way)
+    return array.reduce((total, cv) =>{
+        let count = (cv === searchElement)? 1 : 0;
+        return total + count
+    },0)
+
 }
 
-console.log(nowNumbers);
+console.log(totalNumber);
+
+
+
+
+
+
+
